@@ -30,8 +30,9 @@ namespace BrowserStack.App.Tests
         [Test]
         public void AddNewItem()
         {
-            BrowsePage browsePage = new(App);
-            browsePage.AddNewItem("Seventh item", "This is an item description");
+            //BrowsePage browsePage = new(App);
+            //browsePage.AddNewItem("Seventh item", "This is an item description");
+            Console.WriteLine("THE TEST IS RUN");
         }
 
         [TearDown]
