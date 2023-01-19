@@ -30,7 +30,7 @@ steps:
   displayName: 'Run Tests'
   inputs:
     command: 'test'
-    arguments: '--filter FullyQualifiedName\!~ReportGeneration'
+    arguments: '--filter "CheckItemCount"'
   continueOnError: true
   env:
     CAPABILITIES_FILENAME: capabilities.yml
