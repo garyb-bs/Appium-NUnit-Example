@@ -27,7 +27,7 @@ steps:
   displayName: 'Run Tests'
   inputs:
     command: 'test'
-    arguments: '--filter "CheckItemCount"'
+    arguments: '--filter "AddNewItem"'
   continueOnError: true
   env:
     CAPABILITIES_FILENAME: capabilities.yml
