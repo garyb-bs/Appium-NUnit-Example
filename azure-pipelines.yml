@@ -6,10 +6,8 @@ pool:
 
 steps:
 - task: BrowserStackConfig@0
-  name: 'BrowserStackConfiguration'
-  displayName: 'BrowserStack Configuration'
   inputs:
-    BrowserStackServiceEndPoint: 'BStack Demo Account'
+    BrowserStackServiceEndPoint: 'BS_Demo_Creds'
 
 - task: DotNetCoreCLI@2
   name: 'RestoreProject'
@@ -23,7 +21,6 @@ steps:
   displayName: 'Build Project'
   inputs:
     command: 'build'
-
 
 - task: DotNetCoreCLI@2
   name: 'TestProjectBuild'
